@@ -69,6 +69,9 @@
   align-items: center;
   padding-left: 20px;
   z-index: 10;
+    inset: auto !important; /* Remove the inset */
+    width: auto !important; /* Override width */
+
 }
 
 .mermaid-gif {
