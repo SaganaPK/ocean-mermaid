@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "mermaid-invite"
-  }
+    "default": "mermaid-invite",
+    "einvite": "mermaid-invite"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
