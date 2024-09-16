@@ -16,4 +16,4 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_BIRTHDAYINVITE_F00D0 }}
           channelId: live
-          projectId: mermaid-invite
+          projectId: birthdayinvite-f00d0
