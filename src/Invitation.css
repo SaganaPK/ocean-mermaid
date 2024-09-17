@@ -1,0 +1,81 @@
+.invitation-container {
+    background-color: #ffe6f2;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .invitation-text {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .invitation-container p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  /* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Media Queries */
+  
+  /* For tablets and small desktops (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .invitation-container {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    .invitation-text {
+      font-size: 2rem;
+    }
+  
+    .invitation-container p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* For tablets and large phones (max-width: 768px) */
+  @media (max-width: 768px) {
+    .invitation-container {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .invitation-text {
+      font-size: 1.7rem;
+    }
+  
+    .invitation-container p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* For small phones (max-width: 480px) */
+  @media (max-width: 480px) {
+    .invitation-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .invitation-text {
+      font-size: 1.5rem;
+    }
+  
+    .invitation-container p {
+      font-size: 0.8rem;
+    }
+  }
+  

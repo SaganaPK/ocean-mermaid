@@ -3,10 +3,11 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import './App.css';
 import mermaidGif from './assets/images/mermaidanime.gif'; // Add your GIF here
 import RSVPForm from './RSVPForm';
+import Invitation from './Invitation';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <Parallax pages={3} style={{ top: '0', left: '0' }} className="animation">
         
         <ParallaxLayer offset={0} speed={-0.1}>
@@ -47,23 +48,12 @@ function App() {
         </ParallaxLayer>
 
         {/* Invitation Text and Event Details Layer */}
-        <ParallaxLayer offset={1} speed={0.25} className="text-layer">
-          <div className="invitation-container">
-            <h2 className="invitation-text">Welcome to Nithila and Nila's birthday!</h2>
-            <p>Dive into the magic of the deep blue and join us for an enchanting Underworld Mermaid Party</p>
-
-            <h2>When the mermaids will surface:</h2>
-            <p>October 13, 2024</p>
-            <h2>The tides start rolling at:</h2>
-            <p>Starts from: 1 PM</p>
-            <h2>Where the underwater adventure begins:</h2>
-            <p>Poonkani Party Hall</p>
-            <p>No 70, 70/1 Balavinyagar Kovil Street, Thoothukudi</p>
-          </div>
+        <ParallaxLayer offset={1} speed={0} className="invitation-page">
+          <Invitation /> {/* Rendering the invitation inside the parallax */}
         </ParallaxLayer>
 
         {/* RSVP Component */}
-        <ParallaxLayer offset={2} speed={0.25} className="rsvp-page">
+        <ParallaxLayer offset={2} speed={0} className="rsvp-page">
           <RSVPForm /> {/* Rendering the RSVPForm inside the parallax */}
         </ParallaxLayer>
 

@@ -1,25 +1,30 @@
-/* Basic styles for RSVP form */
 .rsvp-form-container {
   position: relative;
   z-index: 20; /* Ensure content is above background layers */
-  
-}
-
-.rsvp-form-container, .rsvp-form {
-  background-color: #E0FFFF;
-  padding: 50px;
+  height: auto; /* Adjust height to fit content */
+  max-width: 600px; /* Limit maximum width for responsiveness */
+  padding: 20px; /* Adjust padding for spacing */
+  display: flex;
+  flex-direction: column;
+  background-color: #ecbec5;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto;
   box-sizing: border-box;
   text-align: center;
 }
 
+/* RSVP form styling */
+.rsvp-form-container, .rsvp-form {
+  width: 100%; /* Full width within container */
+  margin: auto; /* Reset margin */
+  justify-content: center;
+  align-items: center;
+}
+
 /* Styles for headings */
 .rsvp-form-container h2, .rsvp-form h3 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 1.8em; /* Adjust font size */
+  margin-bottom: 15px; /* Reduce margin for spacing */
 }
 
 /* Form element styles */

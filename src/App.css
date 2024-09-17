@@ -1,6 +1,5 @@
 /* Base styles */
 .app {
-  background-color: aquamarine;
   height: 100%;
   overflow-y: auto;
 }
@@ -31,7 +30,7 @@
 }
 
 /* Specific layers */
-#l7, #l8 {
+#l7, #l8 ,l9 {
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -79,31 +78,6 @@
   z-index: 30; /* Ensure the GIF itself also has a higher z-index */
 }
 
-/* Invitation container */
-.invitation-container {
-  background-color: #ffe6f2;
-  padding: 50px;
-  border-radius: 10px;
-  text-align: center;
-  width: 80%;
-  margin: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 20; /* Ensure content is above background layers */
-}
-
-.invitation-text {
-  font-size: 2.5rem;
-  color: #333;
-  animation: fadeIn 3s ease-in-out;
-}
-
-.invitation-container p {
-  font-size: 1.2rem;
-  color: #555;
-  animation: slideIn 3s ease-in-out;
-}
-
 /* Splish splash container */
 .splish-splash-container {
   display: flex;
@@ -127,21 +101,23 @@
   margin-top: 20px;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideIn {
-  from { transform: translateY(50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+.invitation-page {
+  background-color: #f4e9c5; /* Light background for the invitation */
+  padding: 50px 0; /* Padding for top and bottom to avoid overlap */
+  height: 100vh; /* Make sure it takes full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .rsvp-page{
   overflow-y: auto; /* Allow vertical scrolling */
   height: 100vh; /* Set the height to the viewport height */
   position: relative; /* Ensure proper positioning */
+  background-color: #cfd6f5;
+  padding: 50px 0; 
+  justify-content: center;
 }
 
 /* Media Queries */
@@ -150,23 +126,14 @@
     width: 150px;
   }
 
-  .invitation-container {
-    width: 90%;
-    padding: 30px;
-  }
-
-  .invitation-text {
-    font-size: 2rem;
-  }
-
-  .invitation-container p {
-    font-size: 1rem;
-  }
-
   .splish-splash-text {
     font-size: 1.8rem;
     align-self: flex-start; /* Add this line */
-  margin-top: 20px;
+    margin-top: 20px;
+  }
+
+  .invitation-page {
+    padding: 30px 0;
   }
 }
 
@@ -184,23 +151,14 @@
     width: 120px;
   }
 
-  .invitation-container {
-    width: 95%;
-    padding: 20px;
-  }
-
-  .invitation-text {
-    font-size: 2rem;
-  }
-
-  .invitation-container p {
-    font-size: 0.9rem;
-  }
-
   .splish-splash-text {
     font-size: 1.6rem;
     align-self: flex-start; /* Add this line */
   margin-top: 20px;
+  }
+
+  .invitation-page {
+    padding: 20px 0;
   }
 }
 
@@ -209,22 +167,13 @@
     width: 100px;
   }
 
-  .invitation-container {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .invitation-text {
-    font-size: 2rem;
-  }
-
-  .invitation-container p {
-    font-size: 0.8rem;
-  }
-
   .splish-splash-text {
     font-size: 1.2rem;
     align-self: flex-start; /* Add this line */
   margin-top: 20px;
+  }
+
+  .invitation-page {
+    padding: 10px 0;
   }
 }
