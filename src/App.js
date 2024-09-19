@@ -32,7 +32,7 @@ function App() {
 
         {/* Mermaid GIF Layer */}
         <ParallaxLayer
-          sticky={{ start: 0, end: 1.5}}
+          sticky={{ start: 0, end: 1}}
           factor={0.5}
           className="mermaid-layer"
         >

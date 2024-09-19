@@ -66,8 +66,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 20px;
-  z-index: 30; /* Increase the z-index to ensure it's above other elements */
+  padding-left: 0px;
+  z-index: 1; /* Increase the z-index to ensure it's above other elements */
   inset-area: bottom !important;
   width: auto !important;
 }
@@ -75,7 +75,8 @@
 .mermaid-gif {
   width: 200px;
   height: auto;
-  z-index: 30; /* Ensure the GIF itself also has a higher z-index */
+  z-index: 1; /* Ensure the GIF itself also has a higher z-index */
+  pointer-events: none;
 }
 
 /* Splish splash container */
@@ -127,7 +128,7 @@
   }
 
   .splish-splash-text {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     align-self: flex-start; /* Add this line */
     margin-top: 20px;
   }
@@ -152,7 +153,7 @@
   }
 
   .splish-splash-text {
-    font-size: 1.6rem;
+    font-size: 2rem;
     align-self: flex-start; /* Add this line */
   margin-top: 20px;
   }
@@ -168,7 +169,7 @@
   }
 
   .splish-splash-text {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     align-self: flex-start; /* Add this line */
   margin-top: 20px;
   }
