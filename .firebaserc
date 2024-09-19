@@ -1,7 +1,8 @@
 {
   "projects": {
     "default": "mermaid-invite",
-    "einvite": "mermaid-invite"
+    "einvite": "mermaid-invite",
+    "NithilaAndNilaBirthday": "mermaid-invite"
   },
   "targets": {},
   "etags": {},
