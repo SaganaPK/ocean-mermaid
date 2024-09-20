@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   
-Yes, you can modify the <head> section of your public/index.html file to include the Open Graph (OG) and Twitter meta tags, but you should keep the essential tags like charset, viewport, theme-color, etc. Here's a modified version of your <head> section that includes both the required tags and the social sharing meta tags:
-
-  html
-  Copy code
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Nithila and Nila's Mermaid Birthday Party invitation" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/33.jpg" />
+    <link rel="apple-touch-icon" href="/33.jpg" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Nithila and Nila's Mermaid Birthday Party" />
     <meta property="og:description" content="Join us for an enchanting Underworld Mermaid Party!" />
-    <meta property="og:image" content="%PUBLIC_URL%/images/33.jpg" />
+    <meta property="og:image" content="/33.jpg" />
     <meta property="og:url" content="nila-nithila-birthday.com" />
     <meta property="og:type" content="website" />
 
